@@ -12,5 +12,8 @@ I followed the instruction on deletedata.md in order to delete sensitive data (e
 2) Use API to read in a json with time data, and use pd.to_datetime to transform it into timestamp. Then plot time against total housing units and low income housing units.
 
 ## Assignment 3
+1) Use requests library to request json data from the MTA API
+2) Parse the returned file and extract information we need
+3) Formatted and print the results as desired
 
 ## Assignment 4
