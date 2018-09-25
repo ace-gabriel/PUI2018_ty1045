@@ -21,6 +21,10 @@ def get_params():
 def request_results(params):
     # make request and retrieve the results
     resp = requests.get(URL, params=params).json()
+    # handle garbage value
+    if 'VehicleActivity' not in resp['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0].keys():
+        return None, None
+    # handle regular situations
     info = resp['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
     locations = list(info[i]['MonitoredVehicleJourney']['VehicleLocation'] for i in range(0, len(info)))
     num_bus, locations = len(locations), locations
@@ -47,4 +51,7 @@ if __name__ == '__main__':
 
     params = get_params()
     num_bus, locations = request_results(params)
-    result = formatted_result(params['LineRef'], num_bus, locations)
+    if num_bus == None and locations == None:
+        print("The line number you entered doesn't return any results. ")
+    else:
+        result = formatted_result(params['LineRef'], num_bus, locations)
