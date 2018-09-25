@@ -30,11 +30,11 @@ def request_results(params):
     stops = list(info[i]['MonitoredVehicleJourney']['OnwardCalls']['OnwardCall'] if len(info[i]['MonitoredVehicleJourney']['OnwardCalls']) > 0 else 'N/A' for i in range(0, len(info)))
     stop = list(item[0]['StopPointName'] if item != 'N/A' else 'N/A' for item in stops)
     status = list(item[0]['Extensions']['Distances']['PresentableDistance'] if item != 'N/A' else 'N/A' for item in stops)
-    # return locations, stop, status 
+    # return locations, stop, status
     return locations, stop, status
 
 
-def formatted_result(locations, stops):
+def formatted_result(locations, stops, status):
 
     """
     Latitude,Longitude,Stop Name,Stop Status
@@ -46,8 +46,17 @@ def formatted_result(locations, stops):
     40.776950,-73.981983,AMSTERDAM AV/W 72 ST,< 1 stop away
     40.737650,-73.996626,AV OF THE AMERICAS/W 18 ST,< 1 stop away
     """
+    # dump data into a dataframe and then output to a csv file
+    lat = list(item['Latitude'] for item in locations)
+    long = list(item['Longitude'] for item in locations)
+    df_dic = {'Latitude' : lat, 'Longitude' : long, 'Stop Name' : stops, 'Stop Status' : status}
+    df = pd.DataFrame(data=df_dic)
+    return df
 
 if __name__ == '__main__':
-
+    # main function of this program
     params, filename = get_params()
     locations, stops, status = request_results(params)
+    dataframe = formatted_result(locations, stops, status)
+    # output csv
+    dataframe.to_csv(filename)
