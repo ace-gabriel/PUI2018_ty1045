@@ -23,7 +23,7 @@ def request_results(params):
     resp = requests.get(URL, params=params).json()
     # handle garbage value
     if 'VehicleActivity' not in resp['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0].keys():
-        return None, None
+        return None, None, None
     # handle regular situations
     info = resp['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
     locations = list(info[i]['MonitoredVehicleJourney']['VehicleLocation'] for i in range(0, len(info)))
@@ -57,6 +57,10 @@ if __name__ == '__main__':
     # main function of this program
     params, filename = get_params()
     locations, stops, status = request_results(params)
-    dataframe = formatted_result(locations, stops, status)
-    # output csv
-    dataframe.to_csv(filename)
+    # handle exceptions
+    if locations == None and stops == None and status == None:
+        print("The line number you entered doesn't match any results. ")
+    else:
+        dataframe = formatted_result(locations, stops, status)
+        # output csv
+        dataframe.to_csv(filename)
