@@ -17,3 +17,4 @@ I followed the instruction on deletedata.md in order to delete sensitive data (e
 3) Formatted and print the results as desired
 
 ## Assignment 4
+Same as assignment 3. Use pd.to_csv to export csv 
