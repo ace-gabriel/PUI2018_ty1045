@@ -16,7 +16,7 @@ def get_params():
         print("Invalid arguments. Please run as python3 show_bus_locations_ty1045.py <MTA_KEY> <BUS_LINE>")
         sys.exit()
     # return the formatted output as a dictionary
-    return {"key": sys.argv[1], "LineRef": sys.argv[2], "VehicleMonitoringDetailLevel": "calls"}
+    return {"key": sys.argv[1], "LineRef": sys.argv[2].upper(), "VehicleMonitoringDetailLevel": "calls"}
 
 def request_results(params):
     # make request and retrieve the results
