@@ -63,4 +63,4 @@ if __name__ == '__main__':
     else:
         dataframe = formatted_result(locations, stops, status)
         # output csv
-        dataframe.to_csv(filename)
+        dataframe.to_csv(filename, index=False)
