@@ -1,5 +1,4 @@
 # PUI_HW2 Part IV
-# Gabriel Yin - ty1045 - N10088627
 
 import pandas as pd
 import numpy as np
@@ -7,6 +6,8 @@ import requests
 import json
 import sys, os
 
+__author__ = "Gabriel Yin - ty1045 - N10088627"
+__email__ = "gabrielyin@berkeley.edu"
 
 URL = "http://bustime.mta.info/api/siri/vehicle-monitoring.json"
 
