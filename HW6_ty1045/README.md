@@ -14,3 +14,5 @@ Follow the instructions provided on the template notebook. Find the chi-square o
 
 ### Assignment IV
 
+Follow the instructions provided on the template notebook. Perform KS, pearsonr, spearman test on citibike data from 2015.7 and 2015.8
+
