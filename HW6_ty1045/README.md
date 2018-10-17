@@ -6,7 +6,7 @@ Provide feedbacks on the null pythothesis & data used. Also include three possib
 
 ### Assignment II
 
-
+Worked with Amber Chen (yc3763), Yunhe Cui (yc3420) to create the table in Assignment2.md
 
 ### Assignment III
 
