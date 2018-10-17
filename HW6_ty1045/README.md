@@ -14,5 +14,5 @@ Follow the instructions provided on the template notebook. Find the chi-square o
 
 ### Assignment IV
 
-Follow the instructions provided on the template notebook. Perform KS, pearsonr, spearman test on citibike data from 2015.7 and 2015.8
+Follow the instructions provided on the template notebook. Perform KS, pearsonr, spearman test on citibike data from 2015.7 and 2015.8. The idea of mapping geolocations to borough is from stack overflow. The precious min/max location of Brooklyn and Manhattan is also from stack overflow.
 
