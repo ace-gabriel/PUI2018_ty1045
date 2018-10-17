@@ -11,3 +11,4 @@ MANCOVA	| 1,Age | ordinal | 1,FIQ | categorical | sex, diagnosis | continuous (c
   
   
 ![correlation plot from reference](correlation_screenshot.png)
+![MANCOVA](MA.png)
