@@ -4,6 +4,8 @@
 
 Provide feedbacks on the null pythothesis & data used. Also include three possible tests that can be used to prove the robostness of the hypothesis.
 
+Pull request: (https://github.com/muaz-urwa/PUI2018_um367/pull/2)
+
 ### Assignment II
 
 Worked with Amber Chen (yc3763), Yunhe Cui (yc3420) to create the table in Assignment2.md
