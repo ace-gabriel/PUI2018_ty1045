@@ -15,5 +15,5 @@ Changes I made compared to HW4:
 
 Professor's review (I merged the pull request): https://github.com/ace-gabriel/PUI2018_ty1045/blob/master/HW4_ty1045/citibikeReview_fb55.md
 
-Report link: https://www.authorea.com/users/249602/articles/335939-citi-bike-ridership-subscribers-riding-longer-than-customers
+Report link: https://www.authorea.com/users/249602/articles/335939-citi-bike-ridership-customers-riding-longer-than-subscribers
 
