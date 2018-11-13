@@ -6,5 +6,5 @@ The color and method you're utilizing is perfect. I like the color and layout of
 ### Honesty
 Yes. The plot honestly reproduce the data without deforming it.
 
-Overall, this is a good graph. One thing prevents it goes from good to excellent is the lack of labels. Otherwise I like the 
+Overall, this is a good graph. One thing prevents it goes from good to excellent is the lack of axis labels. Otherwise I like the 
 layout and color.
