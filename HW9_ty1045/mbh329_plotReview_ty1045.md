@@ -1,0 +1,5 @@
+### Clarity
+
+### Esthetic
+
+### Honesty
