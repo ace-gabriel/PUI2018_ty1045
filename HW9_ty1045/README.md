@@ -2,7 +2,9 @@
 
 I provide reviews for Yuchen Ding and Max W, submitting pull requests to their directory, respectively.
 Pull requests:
+
 https://github.com/YuchenDing/PUI2018_yd1402/pull/4
+
 https://github.com/mbh329/PUI2018_mbh329/pull/4
 
 ### Assignment II
