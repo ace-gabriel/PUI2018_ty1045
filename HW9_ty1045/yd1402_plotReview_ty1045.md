@@ -1,5 +1,5 @@
-## Clarity
+### Clarity
 
-## Esthetic
+### Esthetic
 
-## Honesty
+### Honesty
