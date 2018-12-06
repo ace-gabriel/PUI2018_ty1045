@@ -6,4 +6,5 @@
 In this part of the assignment, I am implementing a graph using HW7's internet access data by puma as I found it to be really fascinating. I am ploting a graph of Estimated Total Internet Subscriptions, using the key B28002_001E. Based on review from my classmates, I create the legend so that the scale information can be clearly viewed.
 ![alt text](https://github.com/ace-gabriel/PUI2018_ty1045/blob/master/HW11_ty1045/as2.png)
 
-### Follow the instructions and finish all by myself
+### Follow the instructions provided by professor
+### Discuss part3 with Xiaoning He
